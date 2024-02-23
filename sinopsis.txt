@@ -1,0 +1,18 @@
+Una breve y concisa introduccion a como trabajan las aplicaciones web.
+django es un framework o marco de trabajo. siguiendo sus reglas se puede avanzar muy rápido en la creacion de una aplicacion.
+Django posee una infinidad de baterias o componentes que sirven por ejemplo para aplicar seguridad, ruteo, etc
+
+De que hablamos cuando tratamos el tema de las aplicaciones web?
+
+cuando escribimos una url en nuestros browsers y lo enviamos, desde algun lugar, no importa en este caso dónde, se nos responde con una pagina web que se nos muestra, si todo anduvo bien claro está. Pero que hay detrás de todo esto?. Esta web, la url que se coloca en la barra de busqueda, se traduce en una dirección IP. Los servidores DNS 
+son los que se encargan de hacer esa ultima traducción. Los DNS son los servidores que se encargan de hacer el
+mapeo de los nombres sencillos que cotidianamente nos encontramos a la hora de escribir las url, a una direccion
+IP real a donde ir a buscar lo solicitado, y dicha dirección IP es muy poco amigable para el usuario si tuviera que
+ser escrita tal como en realidad es. Es así que usamos urls que tienen nombres sintetizados para que pedir que se
+nos muestre una web sea sencillo; los servidores DNS se encargan de desintetizar o hacer el mapeo correspondiente de la IP. En la IP donde se recibe la petición(request), se gestiona dicha solicitud a través de un servidor. El servidor recibe la request, recibe la dirección IP desde donde se realizó la petición y genera una respuesta.
+Esta respuesta no siempre es la misma pero en caso de que la solicitud sea aprobada, envía un código HTML con todo el contenido de por ejemplo una página web (desde la IP que realiza el pedido, haciendo ctrl + u se puede ver todo el codigo html que se recibe) hacia la IP que lo solicitó. El browser es quien recibe el código HTML y lo renderiza(representación gráfica, "dibuja" la página) mostrando la página web tal como la vemos.
+
+Arquitecturas en la que se basan la gran mayoría de frameworks
+BUSCAR --> principio de la responsabilidad única
+
+MVC (Model View Controler o Modelo-Vista-Controlador)
